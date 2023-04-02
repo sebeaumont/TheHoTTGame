@@ -5,15 +5,15 @@ data ⊤ : Type where
   tt : ⊤
 
 TrueToTrue : ⊤ → ⊤
-TrueToTrue = {!!}
+TrueToTrue = λ _ → tt
 
 TrueToTrue' : ⊤ → ⊤
-TrueToTrue' x = {!!}
+TrueToTrue' x = x
 
 data ⊥ : Type where
 
 explosion : ⊥ → ⊤
-explosion x = {!!}
+explosion _ = tt
 
 data ℕ : Type where
   zero : ℕ
