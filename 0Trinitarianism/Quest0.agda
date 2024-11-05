@@ -12,9 +12,12 @@ TrueToTrue' x = x
 
 data ⊥ : Type where
 
+-- ex-falso quod libet!
 explosion : ⊥ → ⊤
 explosion _ = tt
 
+-- Natural numbers
 data ℕ : Type where
   zero : ℕ
   suc : ℕ → ℕ
+ 
